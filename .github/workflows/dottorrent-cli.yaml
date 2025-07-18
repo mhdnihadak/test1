@@ -37,7 +37,7 @@ jobs:
           remove-docker-images: true
           
       - name: Install dottorrent-cli
-        run: pipx install dottorrent-cli
+        run: pipx install dottorrent-cli pandas
         
       - name: Download file
         run: aria2c -x 16 -o "${{ inputs.file_name }}" "${{ inputs.url }}"
